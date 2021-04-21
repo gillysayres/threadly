@@ -19,8 +19,9 @@
 <% end %>
 
     <ul class="comments">
-      <li>Have you felt it?</li>
-      <li>There has been an awakening.</li>
+    <% @all_posts.each do |p| %>
+    <li><%= p.comment %></li>
+    <% end %>
     </ul>
 
   </div>
